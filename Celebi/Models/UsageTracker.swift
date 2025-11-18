@@ -23,7 +23,7 @@ class UsageTracker: ObservableObject {
     private var breakTimer: Timer?
     private var breakWindow: NSWindow?
     
-    private let activeThreshold: TimeInterval = 60 // 1 minute
+    private let activeThreshold: TimeInterval = 3600 // 1 hour
     private let breakDuration: TimeInterval = 300 // 5 minutes
     private let idleResetThreshold: TimeInterval = 300 // 5 minutes
     private let checkInterval: TimeInterval = 10 // Check every 10 seconds
